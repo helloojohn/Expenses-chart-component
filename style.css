@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+*  {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #f7e9dc;
+}
+
+
+
+.component {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 350px;
+  gap: 30px;
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(10, 79%, 65%);
+  border-radius: 18px;
+  padding: 20px 30px;
+}
+
+.bal-wrap > div {
+  color: #fff;
+  font-size: 15px;
+  padding-bottom: 9px;
+}
+
+.bal-wrap > p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+
+/* ## chart ## */
+
+.chart {
+  display: flex;
+  background: hsl(33, 100%, 98%);
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.chart-head {
+  margin-bottom: 30px;
+}
+
+
+.chart-head > h1 {
+  color: hsl(25, 47%, 15%);
+  font-size: 1.5em;
+}
+
+.chart-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 10px;
+  color: hsl(28, 10%, 53%);
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+
+.mon, .tue, .wed, .thu, .fri, .sat, .sun {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.mon > .bar {
+  background: hsl(10, 79%, 65%);
+  width: 70px;
+  height: 90px;
+  border-radius: 5px;
+}
+
+.tue > .bar {
+  background: hsl(10, 79%, 65%);
+  width: 70px;
+  height: 120px;
+  border-radius: 5px;
+}
+
+.wed > .bar {
+  background: hsl(186, 34%, 60%);
+  width: 70px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.thu > .bar {
+  background: hsl(10, 79%, 65%);
+  width: 70px;
+  height: 110px;
+  border-radius: 5px;
+}
+
+.fri > .bar {
+  background: hsl(10, 79%, 65%);
+  width: 70px;
+  height: 95px;
+  border-radius: 5px;
+}
+
+.sat > .bar {
+  background: hsl(10, 79%, 65%);
+  width: 70px;
+  height: 140px;
+  border-radius: 5px;
+}
+
+.sun > .bar {
+  background: hsl(10, 79%, 65%);
+  width: 70px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+hr {
+  border: 1px solid hsl(30, 21%, 85%);
+  margin-bottom: 30px;
+}
+
+.chart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: hsl(28, 10%, 53%);
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.total > div {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.total > p {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+}
+
+
+.percent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.percent > div {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+  .component {
+    margin: 10px;
+  }
+
+  .bar {
+    width: 32px !important;
+  }
+}
