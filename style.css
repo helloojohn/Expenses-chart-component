@@ -12,10 +12,11 @@ body {
     background-color: #f7e9dc;
 }
 
-.container {
+main {
   display: flex;
   align-items: center;
   Justify-content: center;
+  flex: 1;
 }
 
 
@@ -26,6 +27,9 @@ body {
   margin: 50px 10px;
   gap: 30px;
 }
+
+
+/* ## Balance ## */
 
 .balance {
   display: flex;
@@ -67,6 +71,7 @@ body {
 .chart-head > h1 {
   color: hsl(25, 47%, 15%);
   font-size: 1.5em;
+  margin-bottom: 50px;
 }
 
 .chart-box {
@@ -79,9 +84,6 @@ body {
   gap: 15px;
 }
 
-.bar {
-  width: 60px;
-}
 
 .mon, .tue, .wed, .thu, .fri, .sat, .sun {
   display: flex;
@@ -171,6 +173,8 @@ hr {
   align-self: flex-end;
 }
 
+/* ## Responsive ## */
+
 @media screen and (max-width: 600px) {
   .component {
     margin: 10px;
@@ -183,24 +187,46 @@ hr {
   .chart-box {
     gap: 3px !important;
   } 
+
+  .bar:hover #tooltiptext {
+    position: absolute;
+    top: -32px !important;
+    visibility: visible;
+    opacity: 1;
+    font-size: .5em;
+    padding: 7px;
+  }
 }
 
-/* @media screen and (min-width: 600px) {
-  .component {
-    margin: 20px;
-  }
+/* ## Tooltip/hover ## */
 
-  .bar {
-    width: 60px !important;
-  }
+.bar {
+  width: 60px;
+  position: relative;
+  cursor: pointer;
 }
 
-@media screen and (min-width: 750px) {
-  .component {
-    margin: 70px 350px;
-  }
 
-  .bar {
-    width: 60px !important;
-  }
-} */
+#tooltiptext {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+  background-color: hsl(25, 47%, 15%);
+  color:hsl(30, 21%, 85%);
+  white-space: nowrap;
+  padding: 10px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.bar:hover #tooltiptext {
+  position: absolute;
+  top: -50px;
+  visibility: visible;
+  opacity: 1;
+}
+
+
