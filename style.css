@@ -5,10 +5,17 @@
   font-size: 18px;
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: #f7e9dc;
+    background-color: #f7e9dc;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  Justify-content: center;
 }
 
 
@@ -16,7 +23,7 @@ body {
 .component {
   display: flex;
   flex-direction: column;
-  margin: 70px 350px;
+  margin: 50px 10px;
   gap: 30px;
 }
 
@@ -69,8 +76,12 @@ body {
   color: hsl(28, 10%, 53%);
   margin-bottom: 30px;
   flex-wrap: wrap;
+  gap: 15px;
 }
 
+.bar {
+  width: 60px;
+}
 
 .mon, .tue, .wed, .thu, .fri, .sat, .sun {
   display: flex;
@@ -81,49 +92,42 @@ body {
 
 .mon > .bar {
   background: hsl(10, 79%, 65%);
-  width: 70px;
   height: 90px;
   border-radius: 5px;
 }
 
 .tue > .bar {
   background: hsl(10, 79%, 65%);
-  width: 70px;
   height: 120px;
   border-radius: 5px;
 }
 
 .wed > .bar {
   background: hsl(186, 34%, 60%);
-  width: 70px;
   height: 150px;
   border-radius: 5px;
 }
 
 .thu > .bar {
   background: hsl(10, 79%, 65%);
-  width: 70px;
   height: 110px;
   border-radius: 5px;
 }
 
 .fri > .bar {
   background: hsl(10, 79%, 65%);
-  width: 70px;
   height: 95px;
   border-radius: 5px;
 }
 
 .sat > .bar {
   background: hsl(10, 79%, 65%);
-  width: 70px;
   height: 140px;
   border-radius: 5px;
 }
 
 .sun > .bar {
   background: hsl(10, 79%, 65%);
-  width: 70px;
   height: 100px;
   border-radius: 5px;
 }
@@ -173,6 +177,30 @@ hr {
   }
 
   .bar {
-    width: 30px !important;
+    width: 2em !important;
+  }
+
+  .chart-box {
+    gap: 5px !important;
   }
 }
+
+/* @media screen and (min-width: 600px) {
+  .component {
+    margin: 20px;
+  }
+
+  .bar {
+    width: 60px !important;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .component {
+    margin: 70px 350px;
+  }
+
+  .bar {
+    width: 60px !important;
+  }
+} */
