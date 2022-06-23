@@ -188,7 +188,7 @@ hr {
     gap: 3px !important;
   } 
 
-  .bar:hover #tooltiptext {
+  .bar:hover #tip {
     position: absolute;
     top: -32px !important;
     visibility: visible;
@@ -198,7 +198,7 @@ hr {
   }
 }
 
-/* ## Tooltip/hover ## */
+/* ## Tip/hover ## */
 
 .bar {
   width: 60px;
@@ -207,7 +207,7 @@ hr {
 }
 
 
-#tooltiptext {
+#tip {
   position: absolute;
   left: 50%;
   top: 0px;
@@ -222,7 +222,7 @@ hr {
   transition: opacity 0.2s;
 }
 
-.bar:hover #tooltiptext {
+.bar:hover #tip {
   position: absolute;
   top: -50px;
   visibility: visible;
