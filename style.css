@@ -24,7 +24,7 @@ main {
 .component {
   display: flex;
   flex-direction: column;
-  margin: 50px 10px;
+  margin: 80px 10px;
   gap: 30px;
 }
 
